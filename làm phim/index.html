@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Phim</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+    <div class="header-top">
+        <div class="logo">
+            <span class="logo-main">Phatchill</span>
+            <span class="logo-sub">PHIM ONLINE</span>
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Nhập tên phim bạn muốn tìm kiếm...">
+            <button>🔍</button>
+        </div>
+
+       <div class="user-menu" id="userMenu"></div>
+    
+    
+</div>
+        
+        </div>
+    </div>
+
+<nav class="nav">
+    <a href="#" onclick="showAll()">PHIM MỚI</a>
+    <a href="#" onclick="showSeries()">PHIM BỘ</a>
+    <a href="#" onclick="showSingle()">PHIM LẺ</a>
+
+    <div class="dropdown">
+        <a href="#">QUỐC GIA ▾</a>
+        <div class="dropdown-menu">
+            <span onclick="filterCountry('Viet Nam')">Việt Nam</span>
+            <span onclick="filterCountry('Trung Quốc')">Trung Quốc</span>
+            <span onclick="filterCountry('Âu Mỹ')">Âu Mỹ</span>
+            <span onclick="filterCountry('Nhật Bản')">Nhật Bản</span>
+            <span onclick="filterCountry('Hàn Quốc')">Hàn Quốc</span>
+            <span onclick="showOtherCountries()">Quốc Gia Khác</span>
+        </div>
+    </div>
+</nav>
+
+
+</header>
+
+
+<div class="container">
+    <h2 class="title">PHIM MỚI CẬP NHẬT</h2>
+
+    <div class="movie-grid" id="movieList"></div>
+</div>
+
+<div class="top">
+    <h2 class="title">TOP 10 PHIM TUẦN</h2>
+    <ul id="topList"></ul>
+    
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
